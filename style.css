@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  scroll-snap-type: y mandatory;
+}
+
+video, .img-tesla {
+  width: 100%; /* largura*/
+  height: 100%; /* altura*/
+  position: absolute; /*posicionar na posição exata que desejar*/
+  top: 0; 
+  left: 0;
+  z-index: -1; /* define quem fica na frente de quem*/
+  object-fit: cover; /* Faz com que o vídeo ocupe toda tela  */
+  filter: brightness(60%);
+}
+
+.logo {
+  filter: brightness(100);
+  position: fixed;
+  width: 120px;
+}
+
+.item {
+  display: flex; /* habilita algumas propriedades css */
+
+  justify-content: space-between; /* cria espaçamento entre os itens  */
+  flex-direction: column; /* Deixa um item debaixo do outro  */
+
+  position: relative;
+  height: 100vh; /* tela toda altura */
+  width: 100vw;  /* tela toda largura */
+  scroll-snap-align: start;
+
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.sub-titulo {
+  color: white;
+}
+
+.info-carro {
+  margin-top: 80px;
+  text-align: center;  /* alinhamento do item ao centro*/
+}
+
+.rodape {
+  text-align: center;
+}
+
+button {
+  background-color:rgba(34,34,34,0.8);
+  color: white;
+  padding: 7px 80px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.test-drive {
+  color: black;
+  background-color: white;
+}
+
+.texto-rodape {
+  color: white;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.model-x {
+  color: rgba(105,105,105, 0.9);
+}
+
+.formulario {
+  position: fixed;
+  top: 40px;
+  width: 600px;
+  height: 100%;
+  z-index: 3 ;
+  left: -50% ; /* Desaparece com formulário*/
+  transition: 1.5s;
+}
